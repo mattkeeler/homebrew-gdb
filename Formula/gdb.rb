@@ -8,7 +8,7 @@ class Gdb < Formula
   revision 1
   head "https://sourceware.org/git/binutils-gdb.git"
 
-  depends_on "python@3.11"
+  depends_on "python@3.12"
   depends_on "texinfo" => :build
   depends_on "xz" # required for lzma support
   head do
@@ -43,7 +43,7 @@ class Gdb < Formula
       --disable-debug
       --disable-dependency-tracking
       --with-lzma
-      --with-python=#{Formula["python@3.11"].opt_bin}/python3.11
+      --with-python=#{Formula["python@3.12"].opt_bin}/python3.12
       --disable-binutils
     ]
 
