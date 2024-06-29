@@ -43,7 +43,7 @@ class Gdb < Formula
       --disable-debug
       --disable-dependency-tracking
       --with-lzma
-      --with-python=#{Formula["python@3.11"].opt_bin}/python3
+      --with-python=#{Formula["python@3.11"].opt_bin}/python3.11
       --disable-binutils
     ]
 
